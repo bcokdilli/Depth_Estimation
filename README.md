@@ -6,6 +6,7 @@ A brief description of what this project does and who it's for
 
 ## Usage/Examples
 
+### CLI Usage
 ```bash
 usage: cli.py [-h] input_image output_image
 
@@ -14,6 +15,11 @@ Depth estimation using ZoeDepth.
 positional arguments:
   input_image Path to input image.
   output_image Path to output depth map.
+```
+
+### API Usage
+```bash
+http://127.0.0.1:8000/predict
 ```
 
 
