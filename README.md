@@ -1,7 +1,7 @@
 
 # Zoe Estimation Depth
 
-A brief description of what this project does and who it's for
+Depth Estimation Project with ZoeDepth. The codes are written in Python. The project runs through FastAPI. The project has been dockerized.
 
 
 ## Usage/Examples
@@ -22,9 +22,8 @@ options:
 
 ### API Usage
 ```bash
-http://127.0.0.1:8000/predict
+http://127.0.0.1:8041/predict
 ```
-
 
 ## Installation
 
@@ -33,18 +32,20 @@ Install zoe estimation depth project with pip
 ```bash
   pip install -r requirements.txt
 ```
-    
-# Project Title
 
-A brief description of what this project does and who it's for
+## Environment Variables
 
+To run this project, you will need to add the following environment variables to your .env file
+
+`IMG_API_KEY`
 
 ## Deployment
 
 To deploy this project run
 
 ```bash
-  npm run deploy
+  docker build -t depth_estimation .
+  docker run -d -p 8041:8041 depth_estimation
 ```
 
 
